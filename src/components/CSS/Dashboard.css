@@ -1,0 +1,173 @@
+.welcome .content {
+  box-shadow: 0px 0px 22px -8px #808080;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.fs-3 {
+  color: #000000;
+}
+.mb-0 {
+  color: #b4b4b4;
+}
+.divPage1 {
+  padding: 1rem !important;
+  margin-left: 15rem !important;
+  background-color: #e8e8e8 !important;
+}
+.rounded-3 {
+  box-shadow: 0px 0px 22px -8px #808080;
+  background-color: #ffffff !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px;
+}
+.pgEmployedList {
+  background-color: #ffffff !important;
+  box-shadow: 0px 0px 22px -8px #808080;
+  min-height: 540px !important;
+  margin-left: 12px;
+  width: 97%;
+}
+.p-4 {
+  background-color: silver;
+  min-height: 753px !important;
+}
+span.btn:focus,
+span.btn:active {
+  outline: none;
+}
+.welcome .dash {
+  min-height: 90px !important;
+  padding: 10px 20px;
+}
+.pendingrequest {
+  background-color: #ffffff !important;
+  min-height: 617px !important;
+  border-radius: 5px !important;
+  width: 338px !important;
+}
+.mt-4 {
+  margin-top: 0.6rem !important;
+  border-radius: 5px !important;
+}
+.cardHire1 {
+  padding-right: 8px;
+  cursor: pointer;
+}
+.cardHire2 {
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.cardHire3 {
+  padding-left: 8px;
+  cursor: pointer;
+}
+div.card:hover {
+  background-color: #a5a5a5 !important;
+  color: #ffffff;
+  /* text-decoration: #ffffff; */
+}
+div.card:hover h3 {
+  color: #ffffff !important;
+}
+div.card:hover .lblNewHire,
+div.card:hover .lblOnboarding,
+div.card:hover .lblCompleted {
+  color: #ffffff;
+  font-weight: bold;
+}
+.activeCard {
+  background-color: #a5a5a5 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+.activeCard #newHire,
+.activeCard #onBoard,
+.activeCard #onBoardingComp {
+  color: #ffffff !important;
+}
+.activeCardText {
+  color: #ffffff !;
+}
+.pendingreq {
+  padding-left: 18px !important;
+}
+.newHire {
+  color: #0075cd;
+}
+.onBoarding {
+  color: #d48626;
+}
+.onCompleted {
+  color: #003087;
+}
+.d-block {
+  color: #7e7e7e;
+}
+/* .borderreq{
+    border: none !important;
+} */
+div.borderreq {
+  /* background-color: var(--dk-dark-bg); */
+  margin-top: 10px !important;
+  box-shadow: 2px 2px 5px #ffffff !important;
+}
+.listofnewhire:hover {
+  background-color: #e6e6e6;
+}
+.listofnewhire {
+  transition: 0.2s;
+}
+.listborder,
+.onqueue,
+.fortrainee {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.dateofapp,
+.nameof,
+.positionof {
+  color: #000000;
+}
+.requestheader {
+  color: #000000;
+}
+.approve,
+.decline {
+  margin-top: 11px;
+  border: #ffffff;
+}
+.fa-check-circle:before,
+.fa-circle-check:before {
+  color: #0d612c !important;
+}
+.fa-circle-xmark:before,
+.fa-circle-xmark:before {
+  color: #dd5353 !important;
+}
+.approve {
+  position: absolute;
+  color: #0d612c;
+  right: 30px;
+  padding-right: 0;
+  transition: transform 0.2s;
+}
+.decline {
+  color: #dd5353;
+  transition: transform 0.2s;
+}
+.decline:hover {
+  color: #dd5353;
+  transform: scale(1.1);
+}
+.approve:hover {
+  color: #0d612c;
+  transform: scale(1.1);
+}
+.textArea {
+  color: #000000;
+}
+#requestPending {
+  margin: 10% 0 0 0;
+}
