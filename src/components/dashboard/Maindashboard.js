@@ -1,12 +1,33 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
+
+import axios from "axios";
+
 import "../CSS/Dashboard.css";
 const Maindashboard = () => {
+  const [adminInfo, setAdminInfo] = useState({});
+
+  // const getUser = useCallback(async () => {}, []);
+
+  //   const cookies = new Cookies();
+  //   const authCookie = cookies.get("authCookie");
+  //   if (authCookie) {
+  //     navigate("/dashboard/maindashboard");
+  //   } else {
+  //     navigate("/");
+  //   }
+  // }, [navigate]);
+
+  useEffect(() => {
+    axios.get("/getUserLogged").then((res) => {
+      setAdminInfo(res.data);
+    });
+  }, []);
   return (
     <Fragment>
-      <div className="p-4 divPage1">
+      <div className="divPage1">
         <div className="welcome">
           <div className="content dash">
-            <h1 className="fs-3">Welcome to Dashboard</h1>
+            <h1 className="fs-3">Welcome to Dashboard {adminInfo.name}</h1>
             <p className="mb-0">Monitoring of employee</p>
           </div>
         </div>
@@ -14,7 +35,7 @@ const Maindashboard = () => {
         <section className="statistics mt-4">
           <div className="row">
             <div className="col-md-8">
-              <div className="row">
+              <div className="row cardsCounter">
                 <div className="col-md-4 cardHire1">
                   <div
                     className="box d-flex rounded-3 align-items-center p-3 card"
@@ -25,7 +46,7 @@ const Maindashboard = () => {
                         <h3 className="mb-0 newHire" id="newHire">
                           2
                         </h3>
-                        <span className="d-block ms-2 lblNewHire activeCard">
+                        <span className="d-block ms-2 lblNewHire">
                           New Hire Queue
                         </span>
                       </div>
@@ -67,18 +88,14 @@ const Maindashboard = () => {
                   </div>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-12">
-                  <div className="row">
-                    <div className="box rounded-2 align-items-center p-3 pgEmployedList">
-                      <ul className="list-group" id="traiNee"></ul>
-                    </div>
-                  </div>
+              <div className="row emplistCard">
+                <div className="box rounded-2 align-items-center p-3 pgEmployedList">
+                  <ul className="list-group" id="traiNee"></ul>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 pendingreq">
-              <div className="box rounded-2 align-items-center p-3 pendingrequest">
+            <div className="col-4 pendingreq">
+              <div className="box rounded-2 align-items-center w-100 p-3 pendingrequest">
                 <div className="">
                   <h5 className="requestheader">
                     Pending Request

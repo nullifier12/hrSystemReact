@@ -76,6 +76,7 @@ body {
   transition: all 0.3s ease-in-out;
   transform: translateX(0);
   z-index: 9999999;
+  height: 100% !important;
   box-shadow: 3px 0 17px -6px #000;
 }
 
@@ -408,14 +409,41 @@ body {
   font-size: 18px;
 }
 
-.sideMenu:hover {
-  background-color: silver;
+.sideMenu {
+  /* display: inline-block; */
+  position: relative;
+  color: #000;
   cursor: pointer;
 }
-.active {
+.sideMenu:after {
+  content: "";
+  position: absolute;
+  width: 39px;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom left;
+  transition: transform 0.2s ease-out;
+}
+/* .sideMenu:hover {
+  text-decoration: underline;
   background-color: silver;
   cursor: pointer;
+} */
+.sideMenu:hover:after {
+  transform: scaleX(2);
+  transform-origin: bottom left;
 }
+.fa {
+  font-size: medium !important;
+  margin-right: 5px !important;
+}
+/* .active {
+  background-color: silver;
+  cursor: pointer;
+} */
 /*calendar*/
 #calendar {
   height: 84%;

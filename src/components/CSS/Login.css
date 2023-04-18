@@ -1,0 +1,19 @@
+.login {
+  /* margin-bottom: 40% !important;
+  padding-bottom: 40% !important; */
+  padding: 0 86px 41% 86px !important ;
+  margin: 10px 0 0 108px !important;
+}
+.register {
+  padding: 0;
+}
+.form {
+  padding: 0 3px 70% 0 !important;
+}
+#registerSection {
+  overflow-x: hidden !important;
+}
+.header {
+  padding: 39px;
+  background-color: rgb(133, 0, 0);
+}
